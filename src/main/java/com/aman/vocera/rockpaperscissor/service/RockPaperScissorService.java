@@ -79,7 +79,7 @@ public class RockPaperScissorService {
 	private Game checkWinner(Game g) {
 		switch (g.getServerMove()) {
 		case ROCK:
-			if(g.getPlayerMove().equals(Moves.SCISSOR)) {
+			if(g.getPlayerMove().equals(Moves.SCISSORS)) {
 				g.setServerScore(g.getServerScore()+1);
 			}else if(!g.getPlayerMove().equals(Moves.ROCK)) {
 				g.setPlayerScore(g.getPlayerScore()+1);				
@@ -92,10 +92,10 @@ public class RockPaperScissorService {
 				g.setPlayerScore(g.getPlayerScore()+1);
 			}
 			break;
-		case SCISSOR:
+		case SCISSORS:
 			if(g.getPlayerMove().equals(Moves.PAPER)) {
 				g.setServerScore(g.getServerScore()+1);
-			}else if(!g.getPlayerMove().equals(Moves.SCISSOR)) {
+			}else if(!g.getPlayerMove().equals(Moves.SCISSORS)) {
 				g.setPlayerScore(g.getPlayerScore()+1);
 			}
 			break;

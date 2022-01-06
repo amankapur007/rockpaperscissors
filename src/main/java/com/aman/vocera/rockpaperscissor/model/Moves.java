@@ -1,9 +1,9 @@
 package com.aman.vocera.rockpaperscissor.model;
 
 public enum Moves {
-	ROCK("rock"), 
-	PAPER("paper"),
-	SCISSOR("scissor");
+	ROCK("ROCK"), 
+	PAPER("PAPER"),
+	SCISSORS("SCISSORS");
 
 	Moves(String move) {
 	}
